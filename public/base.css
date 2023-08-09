@@ -1,0 +1,76 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: #222222;
+  background: #ffffff;
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.right-bar-drop {
+  width: 20rem !important;
+  margin-top: 44px !important;
+}
+
+#trading-vue-js-botbar-canvas{
+  margin-left: -68px!important;
+}
+
+.trading-vue-toolbar {
+  width: 70px!important;
+  margin-left: -12px!important;
+}
+
+@media (max-width: 1530px) {
+  .right-side-bar {
+    width: 20rem !important;
+  }
+
+  .main-dash {
+    width: calc(100vw - 20rem - 80px) !important;
+  }
+
+  .right-bar-drop {
+    width: 15.3rem!important;
+  }
+}
+
+@media (max-width: 1280px) {
+  .main-dash {
+    width: calc(100vw - 5rem) !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-dash {
+    width: calc(800px) !important;
+  }
+}
+
+.line-8 {
+  line-height: 8px !important;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
